@@ -1,0 +1,124 @@
+.container{
+ background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container h1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenido{
+    max-width: 960px;
+max-height: 500px;
+width: 100%;
+height: 80vh;
+background-color: #ffff;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+position: relative;
+padding: 1.8em;
+overflow: scroll;
+}
+
+.actions{
+    position: absolute;
+    top:1em;
+    right:1em;
+
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #9017B2;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none
+}
+
+.close:hover{
+    opacity: 0.75;
+}
+
+.container table{
+width: 100%;
+border-spacing:0 ;
+}
+
+.container table td, .container table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.container table tr:nth-child(even){
+    background-color: #F5D3F5;
+}
+
+/*Tandil*/
+.h2item {
+    /*border-bottom-style: solid;
+border-width: 2px;
+border-color:#9017B2 ;*/
+border-bottom: solid 2px #9017B2 ;
+padding-bottom: 1em;
+font-size: 1.5em;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+ }
+
+ .position{
+    background-color:#9017B2 ;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+ }
+
+ .address{
+    margin: 1.5em;
+font-weight: bold;
+color: #9017B2;
+font-size: 1.2em;
+margin-top: 2em;
+display: inline-block;
+ }
+
+.image{
+float: left;
+margin: 2em;
+height: 250px;
+}
+
+@media (min-height:550px){
+    .contenido{
+        height: 500px;
+        padding: 1em;
+    }
+};
+@media (max-width:600px){
+    .contenido{
+        td{
+            display:block;
+    }
+    th{
+        display: none;
+    }
+};
